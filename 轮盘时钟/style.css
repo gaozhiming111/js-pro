@@ -1,0 +1,63 @@
+body {
+	position: relative;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	min-width: 1600px;
+	min-height: 900px;
+	background-color: #141919;
+	color: #fff;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+}
+
+.yearBox {
+	width: 10vh;
+	height: 10vh;
+	color: #DD0000;
+}
+
+.monthBox {
+	width: 25vh;
+	height: 25vh;
+}
+
+.dateBox {
+	width: 40vh;
+	height: 40vh;
+}
+
+.hourBox {
+	width: 55vh;
+	height: 55vh;
+}
+
+.minuteBox {
+	width: 70vh;
+	height: 70vh;
+}
+
+.secondBox {
+	width: 85vh;
+	height: 85vh;
+}
+
+.yearBox, .monthBox, .dateBox, .hourBox, .minuteBox, .secondBox {
+	position: absolute;
+	display: flex;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+	transition: 1s;
+}
+
+.monthItem, .dateItem, .hourItem, .minuteItem, .secondItem {
+	font-size: 16px;
+	width: 100%;
+	text-align: right;
+	position: absolute;
+	display: inline-block;
+}
