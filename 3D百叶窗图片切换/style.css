@@ -1,0 +1,101 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	min-height: 900px;
+	min-width: 1360px;
+	background-color: #f0f0f0;
+}
+ul,li{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.container {
+	width: 100%;
+	height: 100%;
+}
+
+.header {
+	width: 100%;
+	height: 80px;
+	background-color: #2A6495;
+	color: #f0f0f0;
+	font-weight: 600;
+	font-size: 22px;
+	text-align: center;
+	line-height: 5rem;
+}
+
+.imgList{
+	width: 600px;
+	height: 375px;
+	margin: 20px auto;
+}
+
+.imgList > li {
+	position: relative;
+	float: left;
+	width: 40px;
+	height: 375px;
+	transform-style: preserve-3D;
+	transform-origin: center center -180px;
+}
+
+.imgList > li > a {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/* background-size: 100% 100%; */
+	/* background-position: -0px 0; */
+}
+.imgList > li > a:first-child {
+	left: 0px;
+	top: 0px;
+	transform: rotateX(0deg);
+}
+.imgList > li > a:nth-child(2) {
+	left: 0px;
+	top: -100%;
+	transform: rotateX(90deg);
+	transform-origin: bottom;
+}
+.imgList > li > a:nth-child(3) {
+	left: 0px;
+	top: 0px;
+	transform: translateZ(-360px) rotateX(180deg);
+}
+.imgList > li > a:last-child {
+	left: 0;
+	top: 100%;
+	transform: rotateX(-90deg);
+	transform-origin: top;
+}
+
+.btns {
+	width: 200px;
+	margin: 60px auto;
+}
+
+.btns > div {
+	float: left;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #f0f0f0;
+	background-color: #3498DB;
+	border-radius: 50%;
+	font-style: italic;
+	font-weight: 600;
+	cursor: pointer;
+	margin: 0 5px;
+}
+
+.btns > div.active {
+	background-color: #6FEAF6;
+	color: #2A6495;
+}
+
+.
