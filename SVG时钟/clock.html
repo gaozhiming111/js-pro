@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>SVG时钟</title>
+		<link rel="stylesheet" href="clock.css">
+	</head>
+	<body>
+		<div class="clock-container">
+			<svg id="clock-svg" class="clock-svg">
+				<circle cx="400" cy="400" r="385" fill="#0078A8" stroke="#fff" stroke-width="25" />
+				<circle cx="400" cy="400" r="360" fill="#0078A8" stroke="#fff" stroke-width="2" />
+				<circle cx="400" cy="400" r="20" fill="#fff"/>
+				<polygon
+					id="clock-s-hand"
+					points="390,420,410,420, 402,90,398,90"
+					fill="#00ccff"
+					stroke="#00ccff"
+					stroke-width="2"
+					transform="rotate(0 400,400)"/>
+				<polygon
+					id="clock-m-hand"
+					points="420,390,420,410, 140,402,140,398"
+					fill="#ff9900"
+					stroke="#ff9900"
+					stroke-width="2"
+					transform="rotate(90 400,400)"/>
+				<polygon
+					id="clock-h-hand"
+					points="390,390,390,410,600,402,600,398"
+					fill="#00ffcc"
+					stroke="#00ffcc"
+					stroke-width="2"
+					transform="rotate(-90 400,400)"/>
+			</svg>
+		</div>
+		<script src="clock.js"></script>
+	</body>
+</html>

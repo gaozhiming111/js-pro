@@ -1,0 +1,39 @@
+* {
+	box-sizing: border-box;
+}
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.clock-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #0078A8;
+}
+
+.clock-canvas,
+.clock-ruling,
+.clock-ruling2,
+.clock-text{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-400px,-400px);
+}
+
+.clock-s-hand,
+.clock-m-hand,
+.clock-h-hand {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-400px,-400px) rotateZ(0deg);
+}
+
